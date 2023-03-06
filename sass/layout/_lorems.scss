@@ -1,0 +1,22 @@
+.feats-item__bg {
+    height: 120px;
+    width: 270px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 30px 100px;
+}
+
+.feats-item__text {
+    width: 270px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--gray-color);
+}
+
+.feats-item__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.33;
+}

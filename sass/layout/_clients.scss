@@ -1,0 +1,26 @@
+.clients-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__client a>div:hover,
+    &__client a>div>svg:hover {
+            border-color: var(--logo-color);
+            fill: var(--logo-color);
+        }
+}
+
+.clients-link__border {
+    height: 92px;
+    width: 170px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+

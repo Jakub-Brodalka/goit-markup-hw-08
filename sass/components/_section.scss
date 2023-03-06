@@ -1,0 +1,24 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+        &--notopmargin {
+            padding-top: 0;
+        }
+    
+        &--graybg {
+            background-color: #F5F4FA;
+            text-align: center;
+        }
+    
+        &__title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+}
+

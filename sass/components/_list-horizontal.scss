@@ -1,0 +1,21 @@
+.horizontal-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--header {
+            padding-top: 24px;
+            padding-bottom: 25px;
+        }
+    
+    &--center {
+            justify-content: center;
+        }
+    
+    &--nav {
+            margin-left: 93px;
+            position: relative;
+            flex-direction: row;
+        }
+}
+

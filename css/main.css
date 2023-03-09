@@ -43,11 +43,26 @@ ul {
 }
 
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -313,15 +328,14 @@ ul {
 .hero {
   color: #fff;
   font-weight: 900;
-  line-height: 1.3;
-  font-size: 44px;
+  line-height: 1.62;
   text-decoration: none;
   text-align: center;
-  min-height: 600px;
-  max-width: 1600px;
+  min-height: 400px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -329,9 +343,10 @@ ul {
 .hero__title {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  max-width: 696px;
-  font-size: 44px;
+  padding-top: 118px;
+  padding-left: 57px;
+  padding-right: 58px;
+  font-size: 26px;
   font-weight: 900;
   letter-spacing: 0.06em;
 }
@@ -347,6 +362,42 @@ ul {
   padding: 10px 42px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    line-height: 1.3;
+    min-height: 400px;
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/bg.jpg");
+  }
+  .hero__title {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-left: 202px;
+    padding-right: 201px;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    line-height: 1.3;
+    min-height: 600px;
+    max-width: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/bg.jpg");
+  }
+  .hero__title {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-left: 252px;
+    padding-right: 252px;
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+  }
+}
 .feats-item__bg {
   height: 120px;
   width: 270px;

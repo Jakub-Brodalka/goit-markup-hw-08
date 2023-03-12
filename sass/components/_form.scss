@@ -46,8 +46,10 @@
 }
 
 .form__tldr {
+    font-weight: 400px;
     font-size: 14px;
     line-height: 24px;
+    // width: 370px;
     letter-spacing: 0.03em;
     color: var(--gray-color);
     position: relative;
@@ -72,10 +74,6 @@
     
 }
 
-
-
-
-
 .form__checkbox {
     display: flex;
     flex-direction: row;
@@ -93,4 +91,36 @@
 
 .form__submit {
     margin-top: 21px;
+}
+
+@media screen and (min-width: 480px) {
+    .form__input {
+        width: 370px;
+        height: 40px;
+    }
+
+    .form__comment {
+        width: 370px;
+    }
+    .form__tldr {
+        font-size: 14px;
+        line-height: 1.16;
+    }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {
+    .form__input {
+        width: 448px;
+        height: 40px;
+    }
+        
+    .form__comment {
+        width: 448px;
+    }  
+    .form__tldr {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }

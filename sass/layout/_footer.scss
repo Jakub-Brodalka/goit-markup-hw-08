@@ -2,6 +2,7 @@
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    justify-content: center;
 
     &__title {
         font-size: 14px;
@@ -15,6 +16,9 @@
 
 .footer-div {
     display: flex;
+    flex-flow: column wrap;
+    align-items:center;
+    text-align: center;
     justify-content: space-between;
 }
 
@@ -46,12 +50,16 @@
 }
 
 .newsletter {
-    width: 570px;
-    margin-left: 78px;
-
+    width: 370px;
+    margin-left: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    
     &__form {
         display: flex;
-        flex-direction: row;
+        flex-direction:column;
         align-items: center;
         justify-content: center;
     }
@@ -70,6 +78,7 @@
     background-color: rgba(0, 0, 0, 0);
     padding-left: 16px;
     margin-right: 12px;
+    margin-bottom: 20px;
 
     &:hover,
     &:focus {

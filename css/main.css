@@ -607,7 +607,6 @@ ul {
 .footer {
   background-color: #2F303A;
   padding-top: 60px;
-  padding-bottom: 60px;
   justify-content: center;
 }
 .footer__title {
@@ -653,6 +652,7 @@ ul {
 
 .newsletter {
   width: 450px;
+  padding-bottom: 60px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;

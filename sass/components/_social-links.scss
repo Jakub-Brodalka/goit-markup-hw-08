@@ -1,4 +1,6 @@
 .social-links {
+    display: flex;
+    justify-content: center;
     margin-bottom: 18px;
 
     &--footer {
@@ -6,11 +8,12 @@
         }
 
     &__list {
+    width:206px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 32px;
-    padding-left: 32px;
+    // padding-right: 32px;
+    // padding-left: 32px;
 
         &--footer {
             width: 206px;

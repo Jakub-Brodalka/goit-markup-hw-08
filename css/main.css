@@ -130,6 +130,7 @@ ul {
   color: var(--logo-color);
 }
 .nav__whereami:after {
+  margin-top: 15px;
   content: "";
   display: block;
   width: 55px;
@@ -391,6 +392,13 @@ ul {
   }
   .contact__link {
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 21px;
   }
 }
 .hero {

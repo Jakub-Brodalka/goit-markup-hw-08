@@ -20,6 +20,7 @@
     color: var(--logo-color);
 
     &:after { 
+            margin-top:15px;
             content: "";
             display: block;
             width: 55px;

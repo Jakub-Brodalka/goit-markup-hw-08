@@ -31,6 +31,7 @@
     &__adress {
             font-style: normal;
             line-height: 24px;
+            margin-bottom: 8px;
         }
     
     &__link {
@@ -40,12 +41,15 @@
             transition-property: color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            margin-top: 9px;
+            margin-bottom: 8px;
     
             &:hover {
                 color: var(--logo-color);
             }
         }
+     &__element {
+            margin-bottom: 8px;
+            }
 }
 
 .newsletter {
@@ -134,10 +138,6 @@
 .newsletter {
     width: 570px;
     text-align: left;
-    // display: flex;
-    // flex-flow: row wrap;
-    // align-items: center;
-    // justify-content: left;
     
     &__form {
         display: flex;
@@ -149,4 +149,10 @@
     .input__mail {
         margin-right: 12px;
     }
+.footer-list {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    }
 }
+

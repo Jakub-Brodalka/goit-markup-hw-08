@@ -95,9 +95,10 @@ ul {
   .section {
     padding-top: 85px;
   }
-  .section--notopmargin {
+  .section--wwd {
     display: flex;
-    padding-top: 0;
+    padding-top: 94px;
+    margin-bottom: 94px;
   }
   .section__title {
     font-size: 36px;
@@ -347,6 +348,27 @@ ul {
   border-color: var(--logo-color);
   fill: var(--logo-color);
   outline: none;
+}
+
+.burger {
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+}
+.burger-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.burger-contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.burger-social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .header {
@@ -675,6 +697,7 @@ ul {
 .footer-list__adress {
   font-style: normal;
   line-height: 24px;
+  margin-bottom: 8px;
 }
 .footer-list__link {
   color: rgba(255, 255, 255, 0.6);
@@ -683,10 +706,13 @@ ul {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 9px;
+  margin-bottom: 8px;
 }
 .footer-list__link:hover {
   color: var(--logo-color);
+}
+.footer-list__element {
+  margin-bottom: 8px;
 }
 
 .newsletter {
@@ -779,6 +805,11 @@ ul {
   }
   .input__mail {
     margin-right: 12px;
+  }
+  .footer-list {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
   }
 }
 .modal {

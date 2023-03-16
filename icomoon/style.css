@@ -16,31 +16,39 @@ Single-colored icons can be modified like so:
 ========================================== */
 
 .icon-c1 {
-  width: 1.7373046875em;
+  width: 1.75em;
 }
 
 .icon-c2 {
-  width: 1.7373046875em;
+  width: 1.75em;
 }
 
 .icon-c3 {
-  width: 1.7666015625em;
+  width: 1.78125em;
 }
 
 .icon-c4 {
-  width: 1.7666015625em;
+  width: 1.78125em;
 }
 
 .icon-c5 {
-  width: 1.7666015625em;
+  width: 1.78125em;
 }
 
 .icon-c6 {
-  width: 1.7666015625em;
+  width: 1.78125em;
 }
 
 .icon-envelope {
-  width: 1.3330078125em;
+  width: 1.34375em;
+}
+
+.icon-Linevert {
+  width: 0.03125em;
+}
+
+.icon-menu {
+  width: 1.3125em;
 }
 
 .icon-smartphone {

@@ -32,3 +32,10 @@
         }
 }
 
+@media screen and (min-width: 768px) {
+    .nav__whereami {
+        &:after {
+            margin-top: 25px;
+        }
+    }
+}

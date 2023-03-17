@@ -36,7 +36,6 @@
     &-social-media {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
         }
     &__phone {
         font-size: 34px;
@@ -45,7 +44,7 @@
         line-height: 1.176;
         color: var(--logo-color);
         text-decoration: none;
-    }    
+        }    
     &__mail {
         font-size: 24px;
         font-style: normal;
@@ -62,7 +61,19 @@
         color: var(--logo-color);
         text-decoration: none;
         padding-right: 10px;
-        }
+        }      
+        &-call {
+            padding-top: 10px;
+
+            &:hover {
+                fill: var(--logo-color);
+            }
+    }
+    &__icon {
+        justify-content: center;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        margin-right: 10px;
+    }
 }
 
 @media screen and (min-width: 768px) {

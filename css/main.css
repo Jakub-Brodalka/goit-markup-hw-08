@@ -142,6 +142,11 @@ ul {
   background-color: var(--logo-color);
 }
 
+@media screen and (min-width: 768px) {
+  .nav__whereami:after {
+    margin-top: 25px;
+  }
+}
 .social-links {
   display: flex;
   justify-content: center;
@@ -389,7 +394,6 @@ ul {
 .burger-social-media {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
 }
 .burger__phone {
   font-size: 34px;
@@ -415,6 +419,17 @@ ul {
   color: var(--logo-color);
   text-decoration: none;
   padding-right: 10px;
+}
+.burger-call {
+  padding-top: 10px;
+}
+.burger-call:hover {
+  fill: var(--logo-color);
+}
+.burger__icon {
+  justify-content: center;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 768px) {

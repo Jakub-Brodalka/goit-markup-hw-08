@@ -64,6 +64,8 @@
         }      
         &-call {
             padding-top: 10px;
+            border: none;
+            background-color: #fff;
 
             &:hover {
                 fill: var(--logo-color);
@@ -80,4 +82,7 @@
     .burger-call {
         display: none;
     }
+    .js-menu-container {
+            display: none;
+        }
 }

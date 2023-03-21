@@ -68,11 +68,11 @@
           </li>
         </ul>
         <!-- Burger calling -->
-        <a class="burger-call" href="#">
+        <button type="button" class="burger-call js-open-menu">
           <svg class="burger-icon" width="40" height="40" viewbox="0 0 40 40">
             <use class="burger__icon" href="./images/icons.svg#icon-menu"></use>
           </svg>
-        </a>
+        </button>
       </div>
     </header>
     <main>
@@ -205,13 +205,15 @@
           <ul class="horizontal-list">
             <li class="people">
               <figure class="people__figure">
-                <img
-                  class="people__img"
-                  src="./images/p1.jpg"
-                  width="270"
-                  height="260"
-                  alt="John Doe (1)"
-                />
+                <div class="people__imgbox">
+                  <img
+                    class="people__img"
+                    src="./images/p1.jpg"
+                    width="270"
+                    height="260"
+                    alt="John Doe (1)"
+                  />
+                </div>
                 <figcaption>
                   <h3 class="people__text">John Doe</h3>
                   <p class="people__text people__text--gray">
@@ -288,13 +290,15 @@
             </li>
             <li class="people">
               <figure class="people__figure">
-                <img
-                  class="people__img"
-                  src="./images/p2.jpg"
-                  width="270"
-                  height="260"
-                  alt="John Doe (2)"
-                />
+                <div class="people__imgbox">
+                  <img
+                    class="people__img"
+                    src="./images/p2.jpg"
+                    width="270"
+                    height="260"
+                    alt="John Doe (2)"
+                  />
+                </div>
                 <figcaption>
                   <h3 class="people__text">John Doe</h3>
                   <p class="people__text people__text--gray">
@@ -371,13 +375,15 @@
             </li>
             <li class="people">
               <figure class="people__figure">
-                <img
-                  class="people__img"
-                  src="./images/p3.jpg"
-                  width="270"
-                  height="260"
-                  alt="John Doe (3)"
-                />
+                <div class="people__imgbox">
+                  <img
+                    class="people__img"
+                    src="./images/p3.jpg"
+                    width="270"
+                    height="260"
+                    alt="John Doe (3)"
+                  />
+                </div>
                 <figcaption>
                   <h3 class="people__text">John Doe</h3>
                   <p class="people__text people__text--gray">Marketing</p>
@@ -452,13 +458,16 @@
             </li>
             <li class="people">
               <figure class="people__figure">
-                <img
-                  class="people__img"
-                  src="./images/p4.jpg"
-                  width="270"
-                  height="260"
-                  alt="John Doe (4)"
-                />
+                <div class="people__imgbox">
+                  <img class="people__img" src="./images/p4.jpg" srcset="
+                  ../images/dekstop/jd4.jpg 270w, ../images/dekstop/jd4@2.jpg
+                  540w, ../images/tablet/jd4.jpg 354w,
+                  ../images/tablet/jd4@2.jpg 708w, ../images/mobile/jd4.jpg
+                  450w, ../images/mobile/jd4@2.jpg 900w " sizes="(min-width:
+                  900px) 900px, (min-width: 708px) 708px, (min-width: 540px)
+                  540px, (min-width: 450px) 450px,(min-width: 354px) 354px,
+                  (min-width: 270px) 270px, alt="John Doe (4)" />
+                </div>
                 <figcaption>
                   <h3 class="people__text">John Doe</h3>
                   <p class="people__text people__text--gray">UI Designer</p>
@@ -799,8 +808,9 @@
                 required
               />
               <label class="form__tldr" for="tldr">
-                Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-                <a href="#">Politykę Prywatności</a>.</label
+                Oświadczam iż akceptuję
+                <a class="form__tldr--link" href="#">Regulamin</a> i
+                <a class="form__tldr--link" href="#">Politykę Prywatności</a>.</label
               >
             </div>
             <button type="submit" class="signup-btn form__submit">
@@ -811,6 +821,61 @@
       </div>
     </div>
 
+    <div class="js-menu-container">
+      <div class="burger is-hidden">
+        <div class="burger-menu">
+          <button type="button" class="button__close js-close-menu">X</button>
+          <ul class="burger-list">
+            <li class="burger-list__element">
+              <a class="burger-list__nav" href="./index.html">Agencja</a>
+            </li>
+            <li class="burger-list__element">
+              <a class="burger-list__nav" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="burger-list__nav" href="./contact.html">Kontakt</a>
+            </li>
+          </ul>
+          <ul class="burger-contact-list">
+            <li class="burger-list__element">
+              <a class="burger__phone" href="tel:+48111111111">
+                +48 111 111 111
+              </a>
+            </li>
+            <li class="burger-list__element">
+              <a class="burger__mail" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="burger-social-media">
+          <li class="burger-social-media">
+            <a class="burger__social-link" href="#"> Instagram </a>
+            <svg class="burger__icon" width="1" height="22" viewbox="0 0 1 22">
+              <use href="images/icons.svg#linevert"></use>
+            </svg>
+          </li>
+          <li class="burger-social-media">
+            <a class="burger__social-link" href="#"> Twitter </a>
+            <svg class="burger__icon" width="1" height="22" viewbox="0 0 1 22">
+              <use href="images/icons.svg#linevert"></use>
+            </svg>
+          </li>
+          <li class="burger-social-media">
+            <a class="burger__social-link" href="#"> Facebook </a>
+            <svg class="burger__icon" width="1" height="22" viewbox="0 0 1 22">
+              <use href="images/icons.svg#linevert"></use>
+            </svg>
+          </li>
+          <li class="burger-social-media">
+            <a class="burger__social-link" href="#"> Linkedin </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

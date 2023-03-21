@@ -4,25 +4,23 @@
     padding-right: 15px;
 }
 
-.contact__link:hover>.nav__link {
-    fill: var(--logo-color);
-    color: var(--logo-color);
-}
-
 .contact__icon {
     margin-right: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
-    .horizontal-list--nav {
-        display: none;
+.contact__link:hover>.nav__link {
+    fill: var(--logo-color);
+    color: var(--logo-color);
+}
+
+.horizontal-list--nav {
+    display: none;
     }
 
-    .contact__link {
-        display: none;
+.contact__link {
+    display: none;
     }
-}
 
 @media screen and (min-width: 768px) {
     .horizontal-list--nav {

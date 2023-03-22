@@ -1,3 +1,9 @@
+.js-menu-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+}
 .burger {
     background-color: #fff;
     padding-top: 48px;
@@ -64,6 +70,8 @@
         }      
         &-call {
             padding-top: 10px;
+            font-weight: 0;
+            font-size: 1px;
             border: none;
             background-color: #fff;
 
@@ -79,10 +87,13 @@
 }
 
 @media screen and (min-width: 768px) {
+    .js-menu-container {
+        display: none;
+    }
     .burger-call {
         display: none;
     }
     .js-menu-container {
             display: none;
-        }
+    }
 }

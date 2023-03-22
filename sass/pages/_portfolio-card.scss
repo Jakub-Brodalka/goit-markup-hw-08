@@ -3,9 +3,9 @@
     display: flex;
     justify-content: space-between;
     row-gap: 30px;
-    // align-content: space-between;
     flex-wrap: wrap;
     margin: 0px;
+    margin-bottom:60px;
 }
 
 .pf-card {
@@ -59,6 +59,22 @@
         }
 }
 
+
+@media screen and (min-width: 480px) {
+    .pf-card {
+        width: 450px;
+    }
+
+    .pf-figure {
+        width: 450px;
+
+        &__img {
+            width: 450px;
+            height: 294px;
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
 .pf-card {
     width: 354px; 
@@ -72,7 +88,10 @@
     }
 }    
 @media screen and (min-width: 1200px) {
-.pf-card {
+.pf-list {
+        margin-bottom: 94px;
+    }
+    .pf-card {
     width: 370px;
 }
 .pf-figure {

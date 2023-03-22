@@ -72,7 +72,82 @@
           <svg class="burger-icon" width="40" height="40" viewbox="0 0 40 40">
             <use class="burger__icon" href="./images/icons.svg#icon-menu"></use>
           </svg>
+          .
+          <!-- kropka bo vsc sie pulta ze button musi miec tekst -->
         </button>
+
+        <div class="js-menu-container">
+          <div class="burger is-hidden">
+            <div class="burger-menu">
+              <button type="button" class="button__close js-close-menu">
+                X
+              </button>
+              <ul class="burger-list">
+                <li class="burger-list__element">
+                  <a class="burger-list__nav" href="./index.html">Agencja</a>
+                </li>
+                <li class="burger-list__element">
+                  <a class="burger-list__nav" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a class="burger-list__nav" href="./contact.html">Kontakt</a>
+                </li>
+              </ul>
+              <ul class="burger-contact-list">
+                <li class="burger-list__element">
+                  <a class="burger__phone" href="tel:+48111111111">
+                    +48 111 111 111
+                  </a>
+                </li>
+                <li class="burger-list__element">
+                  <a class="burger__mail" href="mailto:info@devstudio.com">
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="burger-social-media">
+              <li class="burger-social-media">
+                <a class="burger__social-link" href="#"> Instagram </a>
+                <svg
+                  class="burger__icon"
+                  width="1"
+                  height="22"
+                  viewbox="0 0 1 22"
+                >
+                  <use href="images/icons.svg#linevert"></use>
+                </svg>
+              </li>
+              <li class="burger-social-media">
+                <a class="burger__social-link" href="#"> Twitter </a>
+                <svg
+                  class="burger__icon"
+                  width="1"
+                  height="22"
+                  viewbox="0 0 1 22"
+                >
+                  <use href="images/icons.svg#linevert"></use>
+                </svg>
+              </li>
+              <li class="burger-social-media">
+                <a class="burger__social-link" href="#"> Facebook </a>
+                <svg
+                  class="burger__icon"
+                  width="1"
+                  height="22"
+                  viewbox="0 0 1 22"
+                >
+                  <use href="images/icons.svg#linevert"></use>
+                </svg>
+              </li>
+              <li class="burger-social-media">
+                <a class="burger__social-link" href="#"> Linkedin </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -167,33 +242,57 @@
           <h2 class="section__title">Czym się zajmujemy</h2>
           <ul class="horizontal-list">
             <li class="wwd-item">
-              <img
-                class="wwd-item__image"
-                src="./images/w1.jpg"
-                width="370"
-                height="294"
-                alt="Aplikacje komputerowe"
-              />
+              <div class="wwd__imgbox">
+                <img
+                  class="wwd-item__image"
+                  src="./images/w1.jpg"
+                  width="370"
+                  height="294"
+                  srcset="
+                    ../images/desktop/w1.jpg    370w,
+                    ../images/desktop/w1@2x.jpg 640w
+                  "
+                  sizes="(min-width: 640px)
+                  640px, (min-width: 370px) 370px,"
+                  alt="Aplikacje komputerowe"
+                />
+              </div>
               <div class="wwd-item__text">Aplikacje komputerowe</div>
             </li>
             <li class="wwd-item">
-              <img
-                class="wwd-item__image"
-                src="./images/w2.jpg"
-                width="370"
-                height="294"
-                alt="Aplikacje mobilne"
-              />
+              <div class="wwd__imgbox">
+                <img
+                  class="wwd-item__image"
+                  src="./images/w2.jpg"
+                  width="370"
+                  height="294"
+                  srcset="
+                    ../images/desktop/w2.jpg    370w,
+                    ../images/desktop/w2@2x.jpg 640w
+                  "
+                  sizes="(min-width: 640px)
+                  640px, (min-width: 370px) 370px,"
+                  alt="Aplikacje mobilne"
+                />
+              </div>
               <div class="wwd-item__text">Aplikacje mobilne</div>
             </li>
             <li class="wwd-item">
-              <img
-                class="wwd-item__image"
-                src="./images/w3.jpg"
-                width="370"
-                height="294"
-                alt="Rozwiązania graficzne"
-              />
+              <div class="wwd__imgbox">
+                <img
+                  class="wwd-item__image"
+                  src="./images/w3.jpg"
+                  width="370"
+                  height="294"
+                  srcset="
+                    ../images/desktop/w3.jpg    370w,
+                    ../images/desktop/w3@2x.jpg 640w
+                  "
+                  sizes="(min-width: 640px)
+                  640px, (min-width: 370px) 370px,"
+                  alt="Rozwiązania graficzne"
+                />
+              </div>
               <div class="wwd-item__text">Rozwiązania graficzne</div>
             </li>
           </ul>
@@ -211,6 +310,18 @@
                     src="./images/p1.jpg"
                     width="270"
                     height="260"
+                    srcset="
+                      ../images/desktop/jd1.jpg    270w,
+                      ../images/desktop/jd1@2x.jpg 540w,
+                      ../images/tablet/jd1.jpg     354w,
+                      ../images/tablet/jd1@2x.jpg  708w,
+                      ../images/mobile/jd1.jpg     450w,
+                      ../images/mobile/jd1@2x.jpg  900w
+                    "
+                    sizes="(min-width:
+                  900px) 900px, (min-width: 708px) 708px, (min-width: 540px)
+                  540px, (min-width: 450px) 450px, (min-width: 354px) 354px,
+                  (min-width: 270px) 270px,"
                     alt="John Doe (1)"
                   />
                 </div>
@@ -296,6 +407,18 @@
                     src="./images/p2.jpg"
                     width="270"
                     height="260"
+                    srcset="
+                      ../images/desktop/jd2.jpg    270w,
+                      ../images/desktop/jd2@2x.jpg 540w,
+                      ../images/tablet/jd2.jpg     354w,
+                      ../images/tablet/jd2@2x.jpg  708w,
+                      ../images/mobile/jd2.jpg     450w,
+                      ../images/mobile/jd2@2x.jpg  900w
+                    "
+                    sizes="(min-width:
+                  900px) 900px, (min-width: 708px) 708px, (min-width: 540px)
+                  540px, (min-width: 450px) 450px, (min-width: 354px) 354px,
+                  (min-width: 270px) 270px,"
                     alt="John Doe (2)"
                   />
                 </div>
@@ -381,6 +504,18 @@
                     src="./images/p3.jpg"
                     width="270"
                     height="260"
+                    srcset="
+                      ../images/desktop/jd3.jpg    270w,
+                      ../images/desktop/jd3@2x.jpg 540w,
+                      ../images/tablet/jd3.jpg     354w,
+                      ../images/tablet/jd3@2x.jpg  708w,
+                      ../images/mobile/jd3.jpg     450w,
+                      ../images/mobile/jd3@2x.jpg  900w
+                    "
+                    sizes="(min-width:
+                  900px) 900px, (min-width: 708px) 708px, (min-width: 540px)
+                  540px, (min-width: 450px) 450px, (min-width: 354px) 354px,
+                  (min-width: 270px) 270px,"
                     alt="John Doe (3)"
                   />
                 </div>
@@ -463,12 +598,12 @@
                     class="people__img"
                     src="./images/p4.jpg"
                     srcset="
-                      ../images/dekstop/jd4.jpg   270w,
-                      ../images/dekstop/jd4@2.jpg 540w,
-                      ../images/tablet/jd4.jpg    354w,
-                      ../images/tablet/jd4@2.jpg  708w,
-                      ../images/mobile/jd4.jpg    450w,
-                      ../images/mobile/jd4@2.jpg  900w
+                      ../images/desktop/jd4.jpg    270w,
+                      ../images/desktop/jd4@2x.jpg 540w,
+                      ../images/tablet/jd4.jpg     354w,
+                      ../images/tablet/jd4@2x.jpg  708w,
+                      ../images/mobile/jd4.jpg     450w,
+                      ../images/mobile/jd4@2x.jpg  900w
                     "
                     sizes="(min-width:
                   900px) 900px, (min-width: 708px) 708px, (min-width: 540px)
@@ -812,7 +947,7 @@
               <input
                 class="form__checkbox"
                 type="checkbox"
-                name="tldr"
+                namjs-menu-containere="tldr"
                 id="tldr"
                 required
               />
@@ -831,61 +966,7 @@
       </div>
     </div>
 
-    <div class="js-menu-container">
-      <div class="burger is-hidden">
-        <div class="burger-menu">
-          <button type="button" class="button__close js-close-menu">X</button>
-          <ul class="burger-list">
-            <li class="burger-list__element">
-              <a class="burger-list__nav" href="./index.html">Agencja</a>
-            </li>
-            <li class="burger-list__element">
-              <a class="burger-list__nav" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li>
-              <a class="burger-list__nav" href="./contact.html">Kontakt</a>
-            </li>
-          </ul>
-          <ul class="burger-contact-list">
-            <li class="burger-list__element">
-              <a class="burger__phone" href="tel:+48111111111">
-                +48 111 111 111
-              </a>
-            </li>
-            <li class="burger-list__element">
-              <a class="burger__mail" href="mailto:info@devstudio.com">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-        </div>
-        <ul class="burger-social-media">
-          <li class="burger-social-media">
-            <a class="burger__social-link" href="#"> Instagram </a>
-            <svg class="burger__icon" width="1" height="22" viewbox="0 0 1 22">
-              <use href="images/icons.svg#linevert"></use>
-            </svg>
-          </li>
-          <li class="burger-social-media">
-            <a class="burger__social-link" href="#"> Twitter </a>
-            <svg class="burger__icon" width="1" height="22" viewbox="0 0 1 22">
-              <use href="images/icons.svg#linevert"></use>
-            </svg>
-          </li>
-          <li class="burger-social-media">
-            <a class="burger__social-link" href="#"> Facebook </a>
-            <svg class="burger__icon" width="1" height="22" viewbox="0 0 1 22">
-              <use href="images/icons.svg#linevert"></use>
-            </svg>
-          </li>
-          <li class="burger-social-media">
-            <a class="burger__social-link" href="#"> Linkedin </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script id="modal" src="./js/modal.js"></script>
+    <script id="burger" src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -17,6 +17,62 @@
   </head>
 
   <body>
+    <div id="whopper">
+      <div class="burger">
+        <div class="burger-menu">
+          <button type="button" class="burger__close" id="mcfarmerplease">
+            X
+          </button>
+          <ul class="burger-list">
+            <li class="burger-list__element">
+              <a class="burger-list__nav" href="./index.html">Agencja</a>
+            </li>
+            <li class="burger-list__element">
+              <a class="burger-list__nav" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="burger-list__nav" href="./contact.html">Kontakt</a>
+            </li>
+          </ul>
+          <ul class="burger-contact-list">
+            <li class="burger-list__element">
+              <a class="burger__phone" href="tel:+48111111111">
+                +48 111 111 111
+              </a>
+            </li>
+            <li class="burger-list__element">
+              <a class="burger__mail" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="burger-social-media">
+          <li class="burger-social-media">
+            <a class="burger__social-link" href="#"> Instagram </a>
+            <svg class="burger__icon" width="1" height="22" viewbox="0 0 1 22">
+              <use href="images/icons.svg#linevert"></use>
+            </svg>
+          </li>
+          <li class="burger-social-media">
+            <a class="burger__social-link" href="#"> Twitter </a>
+            <svg class="burger__icon" width="1" height="22" viewbox="0 0 1 22">
+              <use href="images/icons.svg#linevert"></use>
+            </svg>
+          </li>
+          <li class="burger-social-media">
+            <a class="burger__social-link" href="#"> Facebook </a>
+            <svg class="burger__icon" width="1" height="22" viewbox="0 0 1 22">
+              <use href="images/icons.svg#linevert"></use>
+            </svg>
+          </li>
+          <li class="burger-social-media">
+            <a class="burger__social-link" href="#"> Linkedin </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <header class="header">
       <div class="container horizontal-list horizontal-list--header">
         <nav class="horizontal-list horizontal-list--center">
@@ -68,86 +124,11 @@
           </li>
         </ul>
         <!-- Burger calling -->
-        <button type="button" class="burger-call js-open-menu">
+        <button type="button" class="burger-call" id="burgerking">
           <svg class="burger-icon" width="40" height="40" viewbox="0 0 40 40">
             <use class="burger__icon" href="./images/icons.svg#icon-menu"></use>
           </svg>
-          .
-          <!-- kropka bo vsc sie pulta ze button musi miec tekst -->
         </button>
-
-        <div class="js-menu-container">
-          <div class="burger is-hidden">
-            <div class="burger-menu">
-              <button type="button" class="button__close js-close-menu">
-                X
-              </button>
-              <ul class="burger-list">
-                <li class="burger-list__element">
-                  <a class="burger-list__nav" href="./index.html">Agencja</a>
-                </li>
-                <li class="burger-list__element">
-                  <a class="burger-list__nav" href="./portfolio.html"
-                    >Portfolio</a
-                  >
-                </li>
-                <li>
-                  <a class="burger-list__nav" href="./contact.html">Kontakt</a>
-                </li>
-              </ul>
-              <ul class="burger-contact-list">
-                <li class="burger-list__element">
-                  <a class="burger__phone" href="tel:+48111111111">
-                    +48 111 111 111
-                  </a>
-                </li>
-                <li class="burger-list__element">
-                  <a class="burger__mail" href="mailto:info@devstudio.com">
-                    info@devstudio.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <ul class="burger-social-media">
-              <li class="burger-social-media">
-                <a class="burger__social-link" href="#"> Instagram </a>
-                <svg
-                  class="burger__icon"
-                  width="1"
-                  height="22"
-                  viewbox="0 0 1 22"
-                >
-                  <use href="images/icons.svg#linevert"></use>
-                </svg>
-              </li>
-              <li class="burger-social-media">
-                <a class="burger__social-link" href="#"> Twitter </a>
-                <svg
-                  class="burger__icon"
-                  width="1"
-                  height="22"
-                  viewbox="0 0 1 22"
-                >
-                  <use href="images/icons.svg#linevert"></use>
-                </svg>
-              </li>
-              <li class="burger-social-media">
-                <a class="burger__social-link" href="#"> Facebook </a>
-                <svg
-                  class="burger__icon"
-                  width="1"
-                  height="22"
-                  viewbox="0 0 1 22"
-                >
-                  <use href="images/icons.svg#linevert"></use>
-                </svg>
-              </li>
-              <li class="burger-social-media">
-                <a class="burger__social-link" href="#"> Linkedin </a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </header>
     <main>
@@ -253,7 +234,7 @@
                     ../images/desktop/w1@2x.jpg 640w
                   "
                   sizes="(min-width: 640px)
-                  640px, (min-width: 370px) 370px,"
+                  640px, (min-width: 370px) 370px, 100vw"
                   alt="Aplikacje komputerowe"
                 />
               </div>
@@ -271,7 +252,7 @@
                     ../images/desktop/w2@2x.jpg 640w
                   "
                   sizes="(min-width: 640px)
-                  640px, (min-width: 370px) 370px,"
+                  640px, (min-width: 370px) 370px, 100vw"
                   alt="Aplikacje mobilne"
                 />
               </div>
@@ -289,7 +270,7 @@
                     ../images/desktop/w3@2x.jpg 640w
                   "
                   sizes="(min-width: 640px)
-                  640px, (min-width: 370px) 370px,"
+                  640px, (min-width: 370px) 370px, 100vw"
                   alt="Rozwiązania graficzne"
                 />
               </div>
@@ -301,7 +282,7 @@
       <section class="team section section--graybg">
         <div class="container">
           <h2 class="section__title">Nasz zespół</h2>
-          <ul class="horizontal-list">
+          <ul class="horizontal-list not-so-horizontal-list">
             <li class="people">
               <figure class="people__figure">
                 <div class="people__imgbox">
@@ -321,7 +302,7 @@
                     sizes="(min-width:
                   900px) 900px, (min-width: 708px) 708px, (min-width: 540px)
                   540px, (min-width: 450px) 450px, (min-width: 354px) 354px,
-                  (min-width: 270px) 270px,"
+                  (min-width: 270px) 270px, 100vw"
                     alt="John Doe (1)"
                   />
                 </div>
@@ -418,7 +399,7 @@
                     sizes="(min-width:
                   900px) 900px, (min-width: 708px) 708px, (min-width: 540px)
                   540px, (min-width: 450px) 450px, (min-width: 354px) 354px,
-                  (min-width: 270px) 270px,"
+                  (min-width: 270px) 270px, 100vw"
                     alt="John Doe (2)"
                   />
                 </div>
@@ -515,7 +496,7 @@
                     sizes="(min-width:
                   900px) 900px, (min-width: 708px) 708px, (min-width: 540px)
                   540px, (min-width: 450px) 450px, (min-width: 354px) 354px,
-                  (min-width: 270px) 270px,"
+                  (min-width: 270px) 270px, 100vw"
                     alt="John Doe (3)"
                   />
                 </div>
@@ -608,7 +589,7 @@
                     sizes="(min-width:
                   900px) 900px, (min-width: 708px) 708px, (min-width: 540px)
                   540px, (min-width: 450px) 450px, (min-width: 354px) 354px,
-                  (min-width: 270px) 270px,"
+                  (min-width: 270px) 270px, 100vw"
                     alt="John Doe (4)"
                   />
                 </div>

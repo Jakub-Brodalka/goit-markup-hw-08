@@ -1,10 +1,5 @@
-.js-menu-container {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-}
 .burger {
+    width:100vw;
     background-color: #fff;
     padding-top: 48px;
     padding-left:40px;
@@ -83,17 +78,49 @@
         justify-content: center;
         border: 1px solid rgba(33, 33, 33, 0.2);
         margin-right: 10px;
-    }
+    }  
 }
 
 @media screen and (min-width: 768px) {
-    .js-menu-container {
-        display: none;
+.burger-call{
+    display:none;
     }
-    .burger-call {
-        display: none;
+}
+
+
+// mcdonalds - never again
+
+#mcfarmerplease {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#whopper {
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    #burgerking {
+        display: flex;
     }
-    .js-menu-container {
-            display: none;
-    }
+}
+
+// is hidden for reference
+
+// .is-hidden {
+//     opacity: 0;
+//     visibility: hidden;
+//     pointer-events: none;
+// }
+
+.is-open {
+    display: flex
 }

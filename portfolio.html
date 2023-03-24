@@ -17,6 +17,61 @@
   </head>
 
   <body>
+    <div id="whopper" class="no-tomatoes">
+      <div class="burger">
+        <div class="burger-menu">
+          <button type="button" class="burger__close" id="mcfarmerplease">
+            X
+          </button>
+          <ul class="burger-list">
+            <li class="burger-list__element">
+              <a class="burger-list__nav" href="./index.html">Agencja</a>
+            </li>
+            <li class="burger-list__element">
+              <a class="burger-list__nav" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="burger-list__nav" href="./contact.html">Kontakt</a>
+            </li>
+          </ul>
+          <ul class="burger-contact-list">
+            <li class="burger-list__element">
+              <a class="burger__phone" href="tel:+48111111111">
+                +48 111 111 111
+              </a>
+            </li>
+            <li class="burger-list__element">
+              <a class="burger__mail" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="burger-social-media">
+          <li class="burger-social-media">
+            <a class="burger__social-link" href="#"> Instagram </a>
+            <svg class="burger__icon" width="1" height="22" viewbox="0 0 1 22">
+              <use href="images/icons.svg#linevert"></use>
+            </svg>
+          </li>
+          <li class="burger-social-media">
+            <a class="burger__social-link" href="#"> Twitter </a>
+            <svg class="burger__icon" width="1" height="22" viewbox="0 0 1 22">
+              <use href="images/icons.svg#linevert"></use>
+            </svg>
+          </li>
+          <li class="burger-social-media">
+            <a class="burger__social-link" href="#"> Facebook </a>
+            <svg class="burger__icon" width="1" height="22" viewbox="0 0 1 22">
+              <use href="images/icons.svg#linevert"></use>
+            </svg>
+          </li>
+          <li class="burger-social-media">
+            <a class="burger__social-link" href="#"> Linkedin </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <header class="header">
       <div class="container horizontal-list horizontal-list--header">
         <nav class="horizontal-list horizontal-list--center">
@@ -70,7 +125,7 @@
           </li>
         </ul>
         <!-- Burger calling -->
-        <button type="button" class="burger-call js-open-menu">
+        <button type="button" class="burger-call" id="burgerking">
           <svg class="burger-icon" width="40" height="40" viewbox="0 0 40 40">
             <use class="burger__icon" href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -556,5 +611,7 @@
         </div>
       </div>
     </footer>
+
+    <script id="burger" src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -377,6 +377,7 @@ ul {
 
 .burger {
   width: 100vw;
+  height: 100vh;
   background-color: #fff;
   padding-top: 48px;
   padding-left: 40px;
@@ -474,7 +475,8 @@ ul {
 }
 
 #whopper {
-  position: absolute;
+  position: fixed;
+  z-index: 5;
   top: 0px;
 }
 
